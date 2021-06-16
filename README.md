@@ -1,6 +1,6 @@
 
 # Data Modeling with Postgres
-|![](images/tds.jpg)|
+|![](images/tds.png)|
 |:--:|
 |<b>As a data science lover, TowardsDataScience is one of my favourate hubs:blush:</b>|
 
