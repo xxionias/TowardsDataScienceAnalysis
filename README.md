@@ -43,7 +43,17 @@ article_id, title, user_id, posting_time, length_in_min, recommendations, respon
 
 ```etl.py``` -> read and process **stories_data** and **profile_data**
 
+## Output Postgres Database 
+![The `users` table has 16529 entries](images/users_sample.png)  
 
+![The `articles` table has 3908 entries](images/articles_sample.png) 
+
+![`user_id` is the primary key](images/users_type.png)  
+
+![`article_id` is the primary key and `user_id` is a foreign key](images/articles_type.png)  
+
+
+GUI Tool Used Here - [Postico](https://eggerapps.at/postico/)
 
 ## Environment 
 Python 3.6 or above
