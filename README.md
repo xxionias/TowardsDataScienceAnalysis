@@ -2,7 +2,7 @@
 # Data Modeling with Postgres
 
 ## **Overview**
-In this project, we apply Data Modeling with Postgres and build an ETL pipeline using Python. Data are collected in json format.
+In this project, I applied Data Modeling with Postgres and build an ETL pipeline using Python. Data are collected in json format.
 
 
 ## **Stories Dataset**
