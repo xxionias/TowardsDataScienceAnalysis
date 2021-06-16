@@ -1,5 +1,8 @@
 
 # Data Modeling with Postgres
+|![](images/tds.jpg)|
+|:--:|
+|<b>As a data science lover, TowardsDataScience is one of my favourate hubs:blush:</b>|
 
 ## **Overview**
 In this project, I applied Data Modeling with Postgres and build an ETL pipeline using Python. Data are collected in json format.
@@ -43,14 +46,22 @@ article_id, title, user_id, posting_time, length_in_min, recommendations, respon
 
 ```etl.py``` -> read and process **stories_data** and **profile_data**
 
-## Output Postgres Database 
-![The `users` table has 16529 entries](images/users_sample.png)  
+## Output Postgres Database  
+| ![](images/users_sample.png) |
+|:--:|
+| <b>The `users` table has 16529 entries</b> |
 
-![The `articles` table has 3908 entries](images/articles_sample.png) 
+| ![](images/articles_sample.png) |
+|:--:|
+| <b>The `articles` table has 3908 entries</b> |
 
-![`user_id` is the primary key](images/users_type.png)  
+| ![](images/users_type.png) |
+|:--:|
+| <b>`user_id` is the primary key</b> |
 
-![`article_id` is the primary key and `user_id` is a foreign key](images/articles_type.png)  
+| ![](images/articles_type.png) |
+|:--:|
+| <b>`article_id` is the primary key and `user_id` is a foreign key</b> |
 
 
 GUI Tool Used Here - [Postico](https://eggerapps.at/postico/)
