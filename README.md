@@ -1,11 +1,37 @@
+## **Demonstration**
+[![](https://j.gifs.com/gpLYrk.gif)](https://youtu.be/ePhAuf2jVTQ)
 
-# Data Modeling with Postgres
-|![](images/tds.png)|
-|:--:|
-|<b>As a data science lover, TowardsDataScience is one of my favourate hubs:blush:</b>|
+
+:point_right: Choose one of sample keywords:  
+[![](https://j.gifs.com/579nmY.gif)](https://youtu.be/ePhAuf2jVTQ)
+
+
+:point_right: Or input your own keyword:  
+[![](https://j.gifs.com/x6vqPB.gif)](https://youtu.be/ePhAuf2jVTQ)
+
+
+:point_right: Showing relevant articles:  
+[![](https://j.gifs.com/r2RZJp.gif)](https://youtu.be/ePhAuf2jVTQ)
+
+
+:point_right: Analyze reading length:  
+[![](https://j.gifs.com/MZQDMG.gif)](https://youtu.be/ePhAuf2jVTQ)
+
+
+:point_right: Analyze Recommendations:  
+[![](https://j.gifs.com/WP7OZx.gif)](https://youtu.be/ePhAuf2jVTQ)
+
+
+:point_right: Analyze Responses:  
+[![](https://j.gifs.com/Z8VO35.gif)](https://youtu.be/ePhAuf2jVTQ)
+
+
+:point_right: Generate Recommendated User(s):  
+[![](https://j.gifs.com/jYqQyv.gif)](https://youtu.be/ePhAuf2jVTQ)
+
 
 ## **Overview**
-In this project, I applied Data Modeling with Postgres and build an ETL pipeline using Python. Data are collected in json format.
+Hey there!:wave: Welcome to Xinyi's TowardsDataScience Data Analysis App. This app connectes to a Postgres database that contains data [web scraped](https://github.com/xxionias/webscraping/tree/master/mediumstories) from [TowardsDataScience](https:towardsdatascience.com) and analyzes data about your interests from published articles, including the distribution of the recommendations and responses of the articles and lengths of aricles. After some nice graphs, it tries to recommend an author that contributes the most to the topic that you are interested in. Give it a go!
 
 
 ## **Stories Dataset**
@@ -42,9 +68,9 @@ article_id, title, user_id, posting_time, length_in_min, recommendations, respon
 
 ```create_tables.py``` -> contains code for setting up database. Running this file creates **medium_data** and also creates the dimension tables.
 
-```etl.ipynb``` -> a jupyter notebook to analyse dataset before loading. 
-
 ```etl.py``` -> read and process **stories_data** and **profile_data**
+
+```app.py``` -> contains code to generate the [**Streamlit**](https://streamlit.io) web app
 
 ## Output Postgres Database  
 | ![](images/users_sample.png) |
@@ -54,15 +80,6 @@ article_id, title, user_id, posting_time, length_in_min, recommendations, respon
 | ![](images/articles_sample.png) |
 |:--:|
 | <b>The `articles` table has 3908 entries</b> |
-
-| ![](images/users_type.png) |
-|:--:|
-| <b>`user_id` is the primary key</b> |
-
-| ![](images/articles_type.png) |
-|:--:|
-| <b>`article_id` is the primary key and `user_id` is a foreign key</b> |
-
 
 GUI Tool Used Here - [Postico](https://eggerapps.at/postico/)
 
@@ -85,4 +102,22 @@ The ```create_tables.py``` and ```etl.py``` file can also be run independently a
 ```
 python create_tables.py 
 python etl.py 
+```
+
+Run the ```app.py``` as below.
+```
+streamlit run app.py
+```
+
+It should displays the following messages and pops out the web app:
+```
+You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.155:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
 ```
